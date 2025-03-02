@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 25px;
+    background: #f4f4f4;
+}
+
+.form {
+    background: #ffc107;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+}
+
+.form textarea {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    resize: vertical;
+}
+
+.form button {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.form label {
+    font-weight: bolder;
+
+}

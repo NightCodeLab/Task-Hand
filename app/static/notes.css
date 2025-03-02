@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background: #ffc107;
+}
+
+header h1 {
+	color: white;
+}
+
+header input {
+	height: 100%;
+	width: 300px;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+}
+
+header button {
+	padding: 10px;
+	border: solid white 1px;
+	border-radius: 10px;
+	background: none;
+	width: 100px;
+	color: white;
+	font-weight: bold;
+}
+
+.main {
+	background: #f4f4f4;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 300px);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+
+.note {
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 70px -39px rgba(0,0,0,0.75);
+	overflow: hidden;
+}
+
+.note h2 {
+	font-size: 20px;
+	overflow: hidden;
+}
+
+.note pre {
+	height: 80%;
+	text-wrap: wrap;
+}
+
+.note img {
+	display: none;
+}
+
+.note:hover {
+	box-shadow: 0px 0px 70px -25px rgba(0,0,0,0.75);
+	overflow: visible;
+}
+
+.note:hover pre {
+	overflow: hidden;
+}
+
+.note:hover img {
+	display: block;
+}
+
+.note h4 {
+	font-weight: lighter;
+}
+
+.add_note {
+	border: dashed #999999 5px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 70px -39px rgba(0,0,0,0.75);
+}
+
+.add_note img {
+	height: 50px;
+}
+
+.add_note:hover {
+	box-shadow: 0px 0px 70px -25px rgba(0,0,0,0.75);
+}
+
+@media (max-width: 900px) {
+	.main {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(7, 300px);
+	}
+}
+
+@media (max-width: 500px) {
+	.main {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(8, 300px);
+	}
+}
